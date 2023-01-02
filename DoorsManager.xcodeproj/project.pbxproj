@@ -3,25 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6658C97C295E53450023FDA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658C97B295E53450023FDA0 /* AppDelegate.swift */; };
 		6658C97E295E53450023FDA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658C97D295E53450023FDA0 /* SceneDelegate.swift */; };
-		6658C980295E53450023FDA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658C97F295E53450023FDA0 /* ViewController.swift */; };
+		6658C980295E53450023FDA0 /* DMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658C97F295E53450023FDA0 /* DMMainViewController.swift */; };
 		6658C985295E53490023FDA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6658C984295E53490023FDA0 /* Assets.xcassets */; };
 		6658C988295E53490023FDA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6658C986295E53490023FDA0 /* LaunchScreen.storyboard */; };
+		6658C995295FBA8D0023FDA0 /* DMDoorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658C994295FBA8D0023FDA0 /* DMDoorCollectionViewCell.swift */; };
+		6658C997295FBDC70023FDA0 /* DMCollectionViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658C996295FBDC70023FDA0 /* DMCollectionViewConstants.swift */; };
+		6658C999295FC2200023FDA0 /* DMDoorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658C998295FC2200023FDA0 /* DMDoorModel.swift */; };
+		6658C99C2961C7850023FDA0 /* DMParserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658C99B2961C7840023FDA0 /* DMParserMock.swift */; };
+		FD5E1282912055CBC2F8A361 /* Pods_DoorsManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F931F014386841DEA786B696 /* Pods_DoorsManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		592201CDD858A6B4E6C9D3E3 /* Pods-DoorsManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorsManager.debug.xcconfig"; path = "Target Support Files/Pods-DoorsManager/Pods-DoorsManager.debug.xcconfig"; sourceTree = "<group>"; };
 		6658C978295E53450023FDA0 /* DoorsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6658C97B295E53450023FDA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6658C97D295E53450023FDA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6658C97F295E53450023FDA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6658C97F295E53450023FDA0 /* DMMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMMainViewController.swift; sourceTree = "<group>"; };
 		6658C984295E53490023FDA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6658C987295E53490023FDA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6658C989295E53490023FDA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6658C994295FBA8D0023FDA0 /* DMDoorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMDoorCollectionViewCell.swift; sourceTree = "<group>"; };
+		6658C996295FBDC70023FDA0 /* DMCollectionViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMCollectionViewConstants.swift; sourceTree = "<group>"; };
+		6658C998295FC2200023FDA0 /* DMDoorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMDoorModel.swift; sourceTree = "<group>"; };
+		6658C99B2961C7840023FDA0 /* DMParserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMParserMock.swift; sourceTree = "<group>"; };
+		87B1A1DD948F86F785767023 /* Pods-DoorsManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorsManager.release.xcconfig"; path = "Target Support Files/Pods-DoorsManager/Pods-DoorsManager.release.xcconfig"; sourceTree = "<group>"; };
+		F931F014386841DEA786B696 /* Pods_DoorsManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoorsManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD5E1282912055CBC2F8A361 /* Pods_DoorsManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A1088F5A8B2588615EA9FEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F931F014386841DEA786B696 /* Pods_DoorsManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6658C96F295E53450023FDA0 = {
 			isa = PBXGroup;
 			children = (
 				6658C97A295E53450023FDA0 /* DoorsManager */,
 				6658C979295E53450023FDA0 /* Products */,
+				AE3C691398C41373E1BD53D0 /* Pods */,
+				2A1088F5A8B2588615EA9FEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +77,59 @@
 		6658C97A295E53450023FDA0 /* DoorsManager */ = {
 			isa = PBXGroup;
 			children = (
+				6658C98F295E548B0023FDA0 /* Model */,
+				6658C991295E54AB0023FDA0 /* View */,
+				6658C993295E54C90023FDA0 /* Controller */,
+				6658C99A295FC2350023FDA0 /* Service */,
 				6658C97B295E53450023FDA0 /* AppDelegate.swift */,
 				6658C97D295E53450023FDA0 /* SceneDelegate.swift */,
-				6658C97F295E53450023FDA0 /* ViewController.swift */,
 				6658C984295E53490023FDA0 /* Assets.xcassets */,
 				6658C986295E53490023FDA0 /* LaunchScreen.storyboard */,
 				6658C989295E53490023FDA0 /* Info.plist */,
 			);
 			path = DoorsManager;
+			sourceTree = "<group>";
+		};
+		6658C98F295E548B0023FDA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6658C998295FC2200023FDA0 /* DMDoorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6658C991295E54AB0023FDA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6658C994295FBA8D0023FDA0 /* DMDoorCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6658C993295E54C90023FDA0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6658C97F295E53450023FDA0 /* DMMainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6658C99A295FC2350023FDA0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6658C99B2961C7840023FDA0 /* DMParserMock.swift */,
+				6658C996295FBDC70023FDA0 /* DMCollectionViewConstants.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AE3C691398C41373E1BD53D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				592201CDD858A6B4E6C9D3E3 /* Pods-DoorsManager.debug.xcconfig */,
+				87B1A1DD948F86F785767023 /* Pods-DoorsManager.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6658C98C295E53490023FDA0 /* Build configuration list for PBXNativeTarget "DoorsManager" */;
 			buildPhases = (
+				C529DABE27E21EE9FFB2A832 /* [CP] Check Pods Manifest.lock */,
 				6658C974295E53450023FDA0 /* Sources */,
 				6658C975295E53450023FDA0 /* Frameworks */,
 				6658C976295E53450023FDA0 /* Resources */,
+				F6F705FAB178A6CF93F25ABE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -100,7 +170,7 @@
 				};
 			};
 			buildConfigurationList = 6658C973295E53450023FDA0 /* Build configuration list for PBXProject "DoorsManager" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -129,12 +199,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C529DABE27E21EE9FFB2A832 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoorsManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6F705FAB178A6CF93F25ABE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoorsManager/Pods-DoorsManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoorsManager/Pods-DoorsManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DoorsManager/Pods-DoorsManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6658C974295E53450023FDA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6658C980295E53450023FDA0 /* ViewController.swift in Sources */,
+				6658C999295FC2200023FDA0 /* DMDoorModel.swift in Sources */,
+				6658C99C2961C7850023FDA0 /* DMParserMock.swift in Sources */,
+				6658C997295FBDC70023FDA0 /* DMCollectionViewConstants.swift in Sources */,
+				6658C980295E53450023FDA0 /* DMMainViewController.swift in Sources */,
+				6658C995295FBA8D0023FDA0 /* DMDoorCollectionViewCell.swift in Sources */,
 				6658C97C295E53450023FDA0 /* AppDelegate.swift in Sources */,
 				6658C97E295E53450023FDA0 /* SceneDelegate.swift in Sources */,
 			);
@@ -270,6 +386,7 @@
 		};
 		6658C98D295E53490023FDA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 592201CDD858A6B4E6C9D3E3 /* Pods-DoorsManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +414,7 @@
 		};
 		6658C98E295E53490023FDA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87B1A1DD948F86F785767023 /* Pods-DoorsManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
